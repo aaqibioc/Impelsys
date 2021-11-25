@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="scripts\jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(window).ready(function () {
+            $("#otherbox").hide();
+        });
+        
+        $(function () {
+        $("#college").change(function () {
+            if (this.value == "other") {
+                    $("#otherbox").show();          
+                } else {
+                $("#otherbox").hide();
+            }
+        });
+    });
+ 
+    </script>
+</head>
+
+<body>
+    <form>
+        <p>
+            <label>Select your College :</label><br>
+            <select name="college" id="college">
+                <option>Click Here</option>
+                <option value="SRMIST">SRM Institute of science and technology</option>
+                <option value="VIT">Vellore Institute of technology</option>
+                <option value="BITS">BITS Pilani</option>
+                <option value="other">Others</option>
+            </select>
+        </p>
+        <div id="otherbox">
+            <label>Enter college name manually: </label>
+            <input type="text"/>
+        </div>
+    </form>
+
+</body>
+
+</html>
