@@ -1,0 +1,34 @@
+<html>
+<body>
+<script>
+function CoreDom()
+{
+document.getElementById("i1").setAttribute("src", "impelsys2.jpg")
+}
+function HTMLDom()
+{
+i1.src="impelsys2.jpg"
+pl.innerHTML="Beena";
+}
+function Mix()
+{ 
+    document.getElementById("il").src="impelsys2.jpg";
+}
+
+function toggleImage(){
+
+    if (document.getElementById("i1").getAttribute("src") == "impelsys.jpg")
+    {
+        document.getElementById("i1").setAttribute("src", "impelsys2.jpg")
+    }
+
+    else {
+        document.getElementById("i1").setAttribute("src", "impelsys.jpg")
+    }
+}
+
+</script>
+
+<img id="i1" src="Impelsys.jpg" class = "1"> 
+<input type="button" onclick="toggleImage()" value="CoreDom">
+

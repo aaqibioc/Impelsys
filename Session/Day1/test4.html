@@ -1,0 +1,30 @@
+<html>
+<body>
+<style>
+.note
+{
+color:green;
+font-size:2em;
+}
+
+.bright
+{
+color:yellow;
+font-size:5em;
+}
+</style>
+<script>
+function colorText()
+{
+if(p1.getAttribute("class")=="note")
+	p1.setAttribute("class","bright");
+	else
+	p1.setAttribute("class","note");
+}
+
+</script>
+<p id="p1" class="note">IMPELSYS</p>
+<br>
+<input type="button" onclick=colorText() name="color" value="Change">
+</body>
+</html>

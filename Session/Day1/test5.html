@@ -1,0 +1,22 @@
+<html>
+<body>
+    
+    <p>Hello</p>
+    <p>Namaste</p>
+    <p>Hi</p>
+    <input type="button" onclick="AddImage()" value="Add An Image">
+
+    <script>
+    function AddImage()
+    {
+    var x=document.createElement("img");
+    x.src="impelsys.jpg" 
+    document.body.appendChild(x);
+    var z=document.getElementsByTagName("p"); 
+    alert(z[1].childNodes[0].nodeValue); 
+    // alert(z[1].innerHTML) 
+    } 
+
+    </script>
+    </body>
+    </html>
